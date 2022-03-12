@@ -4,12 +4,31 @@ import { createGlobalStyle } from 'styled-components'
 const styled = { createGlobalStyle }
 
 export const GlobalStyles = styled.createGlobalStyle`
+
+  /*  Colors Variables    */
+
+  :root {
+    --mega-sena : #6BEFA3;
+    --quina: #8666EF;
+    --lotofacil: #DD7AC6;
+    --lotomania: #FFAB64 ;
+    --timemania: #5AAD7D;
+    --dia-de-sorte: #BFAF83;
+
+  }
   /* Box sizing rules */
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
+
+  /* Default rem size  */
+
+  html {
+        font-size: 62.5%;
+        background-color: #EFEFEF;
+    }
 
   /* Remove default margin */
   body,

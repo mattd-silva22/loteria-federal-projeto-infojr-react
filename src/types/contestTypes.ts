@@ -1,0 +1,1 @@
+export type ContestType = "mega-sena" | "quina" | "lotofacil" | "lotomania"| "timemania" | "dia-de-sorte"

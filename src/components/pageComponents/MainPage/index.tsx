@@ -128,12 +128,12 @@ export function MainPage() {
             <div className="contest-dropdown-filter-area">
                   <select id="dropdown"  className="dropdown-contest-filter"  name="current_contest" >
            
-                  <option value="0" selected={currentContest === "mega-sena"} onClick={()=>{setCurrentContest("mega-sena")}}>Mega-sena</option>
-                  <option value="1" selected={currentContest === "quina"} onClick={()=>{setCurrentContest("quina")}}>Quina</option>
-                  <option value="2" selected={currentContest === "lotofacil"} onClick={()=>{setCurrentContest("lotofacil")}}>Lotofácil</option>
-                  <option value="3" selected={currentContest === "lotomania"} onClick={()=>{setCurrentContest("lotomania")}}>Lotomania</option>
-                  <option value="4" selected={currentContest === "timemania"} onClick={()=>{setCurrentContest("timemania")}}>Timemania</option>
-                  <option value="5" selected={currentContest === "dia-de-sorte"} onClick={()=>{setCurrentContest("dia-de-sorte")}}>Dia de sorte</option>
+                  <option value="0" selected={currentContest === "mega-sena"? true : false} onClick={()=>{setCurrentContest("mega-sena")}}>Mega-sena</option>
+                  <option value="1" selected={currentContest === "quina"? true : false} onClick={()=>{setCurrentContest("quina")}}>Quina</option>
+                  <option value="2" selected={currentContest === "lotofacil"? true : false} onClick={()=>{setCurrentContest("lotofacil")}}>Lotofácil</option>
+                  <option value="3" selected={currentContest === "lotomania"? true : false} onClick={()=>{setCurrentContest("lotomania")}}>Lotomania</option>
+                  <option value="4" selected={currentContest === "timemania"? true : false} onClick={()=>{setCurrentContest("timemania")}}>Timemania</option>
+                  <option value="5" selected={currentContest === "dia-de-sorte"? true : false} onClick={()=>{setCurrentContest("dia-de-sorte")}}>Dia de sorte</option>
 
                        
                 </select>

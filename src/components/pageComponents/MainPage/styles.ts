@@ -66,12 +66,15 @@ export const ContestArea = styled.div<ComponetsPropsType>`
 
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     
-    padding: 9.6rem;
+    
+    
+    padding: 9.6rem ;
     gap: 5.0rem;
 
+    min-height: 820px;
     height: 100vh;
-    min-height: 1080px;
 
 
     border-top-right-radius: 20% 100%;
@@ -82,8 +85,9 @@ export const ContestArea = styled.div<ComponetsPropsType>`
         min-height: 400px;
         width: 100%;
         align-items: center;
+        justify-content: center;
         padding: 2.6rem;
-        gap: 8.0rem;
+        gap: 5.0rem;
 
         border-top-right-radius: 0 0 ;
         border-bottom-right-radius: 30% 30%;
@@ -113,7 +117,7 @@ export const ContestArea = styled.div<ComponetsPropsType>`
         align-items: center;
         gap: 2.2rem;
 
-        margin: 25.0rem 0;
+        margin: 16.0rem 0;
         p {
             font-size: 3.0rem;
             font-weight: 700;
@@ -123,16 +127,27 @@ export const ContestArea = styled.div<ComponetsPropsType>`
 
         @media(max-width: 880px) {
             margin: 0;
+           flex-direction: column;
         }
     }
 
     .contest-info-area {
         font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+
+
+        @media(max-width: 880px) {
+            align-items: center;
+            justify-content: center;
+        }
         p {
             font-size: 1.4rem;
             text-transform: uppercase;
             color: #fff;
             font-weight: 500;
+
+            
         }
 
         .contest-info-title {
@@ -204,7 +219,12 @@ export const ResultContestArea = styled.div`
     }
 
     p.footer {
+        display: flex;
+        width: 100%;
         font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
        
     }
 `;
